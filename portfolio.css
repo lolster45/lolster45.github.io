@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 /* hello how are you? */
+.hiddenBtn {
+    display: none;
+}
 #navbar ul {
     display: inline-block;
     background-color: #0B2027;
