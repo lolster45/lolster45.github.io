@@ -1,0 +1,609 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+width: 100vw;
+height: 100vh;
+}
+.hamburger {
+    display: none;
+}
+
+#navBar {
+    position: relative;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#navBar ul {
+    list-style: none;
+    display: flex;
+    margin-right: 15px;
+}
+#navBar ul li a {
+    margin-right: 35px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+
+.active {
+    background-color: rgba(0, 0, 0, 0.272);
+}
+
+.control:not(.active):hover {
+    background-color: rgba(255, 255, 255, 0.272);
+
+}
+
+
+#logo {
+    z-index: 6;
+}
+#title {
+    position: relative;
+    z-index: 9;
+    width: 100%;
+    padding-left: 30px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 5px;
+    transform: translateY(50px);
+}
+#orangePic {
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    height: 100%;
+    transform: translateY(-180px);
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 550px 550px 550px;
+    object-fit: contain;
+    margin-top: -185px;
+}
+
+.gridWord {
+    position: relative;
+}
+.graphicCont {
+    max-width: 380px;
+    margin: 0 auto;
+    transform: translateY(135px);
+    align-items: center;
+}
+.gridWord header {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.gridWord p {
+    color: hsl(195, 2%, 38%);
+    font-size: 18px;
+    margin-bottom: 1.9rem;
+}
+.gridWord h5 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+#learnMore1 {
+    height: 5px;
+    margin-top: 10px;
+    width: 130px;
+    transition: 0.5s;
+    border-radius: 50px;
+    
+}
+#learnMore1:hover {
+   text-decoration: underline;
+
+}
+/* #learnMore1:hover {
+    background-color: hsl(51, 100%, 49%);
+    
+} */
+#learnMore2 {
+    height: 5px;
+    margin-top: 10px;
+    width: 100px;
+    transition: 0.5s;
+    border-radius: 50px;
+}
+#learnMore2:hover {
+    background-color: hsl(7, 99%, 70%);
+    
+}
+
+#eggBackground {
+    background-image: url(/pictures/egg\(Sunny\).jpg);
+    background-position-x: center;
+    background-size: cover;
+}
+#cupBackground {
+    background-image: url(/pictures/orangeCup\(sunny\).jpg);
+    background-position-x: center;
+    background-size: cover;
+}
+
+
+
+
+.textTransform {
+    color: hsl(198, 62%, 26%);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    transform: translateY(290px);
+}
+.textTransform h4 {
+    font-weight: 900;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.textTransform p {
+    margin: 0 auto;
+    width: 280px;
+    font-size: 16px;
+}
+
+#imgHold1 {
+    background-image: url(/pictures/cherry\(sunny\).jpg);
+    background-position-x: center;
+    background-size: cover;
+
+}
+#imgHold2 {
+    background-image: url(/pictures/peach\(sunny\).jpg);
+    background-position-x: center;
+    background-size: cover;
+}
+
+#testimonials {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    width: 100%;
+}
+#reviewTitle {
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(210, 4%, 67%);
+    font-size: 1.1rem;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-top: 70px;
+}
+#testimonials div {
+    text-align: center;
+}
+#testimonials div img {
+    height: 70px;
+    border-radius: 50%;
+    margin-top: -40px;
+    margin-bottom: 50px;
+}
+.info {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 30px;
+    width: 270px;
+}
+
+.names {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 50px;
+    font-weight: 900;
+
+}
+.roles {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10px;
+    font-size: 13px;
+    opacity: 0.5;
+}
+#pictures {
+    display: flex;
+    width: 100vw;
+    margin-top: 130px;
+}
+#new1 {
+    
+    background-image: url(/pictures/milkBottles.jpg);
+    background-position-x: center;
+    background-size: cover;
+}
+#new2 {
+ 
+    background-image: url(/pictures/orangeNEW.jpg);
+    background-position-x: center;
+    background-size: cover;
+}
+#new3 {
+ 
+    background-image: url(/pictures/iceCreamCone.jpg);
+    background-position-x: center;
+    background-size: cover;
+}
+#new4 {
+
+    background-image: url(/pictures/sugarCubes.jpg);
+    background-position-x: center;
+    background-size: cover;
+}
+#end {
+    height: 280px;
+    background-color: hsl(168, 56%, 59%);
+}
+
+#footerLogo {
+    transform: translateY(60px);
+    text-align: center;
+}
+#secondNav {
+    width: 390px;
+    margin: 0 auto;
+    margin-top: 95px;
+    text-align: center;
+}
+#secondNav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+#secondNav ul li a {
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(198, 62%, 26%);
+    text-decoration: none;
+}
+#logos {
+    transform: translateY(50px);
+    width: 400px;
+    margin: 0  auto;
+    text-align: center;
+    letter-spacing: 15px;
+    cursor: pointer;
+}
+#secondNav li a:hover {
+    color: white;
+}
+#logos img {
+    transition: .5s;
+}
+#logos img:hover {
+    transform: translateY(8px);
+}
+
+
+@media only screen and (max-width: 811px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .bar {
+        display: block;
+        background-color: white;
+        width: 25px;
+        height: 3.5px;
+        margin: 5.3px;
+        transition: all 0.3s ease-in;
+    }
+
+    .hamburger.lol .bar:nth-child(1) {
+        transform: translateY(8.5px) rotate(45deg);
+    }
+    .hamburger.lol .bar:nth-child(2) {
+        opacity: 0;
+    } 
+    .hamburger.lol .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    #realNav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 20;
+        top: 90px;
+        left: -1000px;
+        transition: all 0.5s;
+        border: 0.5px solid rgba(45, 43, 43, 0.514) ;
+        width: 100vw;
+        height: 300px;
+        text-align: center;
+        padding-left: 48px;
+    }
+    #realNav li {
+        margin-bottom: 30px;
+        position: relative;
+        top: 50px;
+    }
+    
+    #navBar ul li a {
+        opacity: 0.7;
+        color: black;
+        font-weight: 800;
+    }
+    .active {
+        background-color: hsl(51, 100%, 49%);
+    }
+    #grid {
+        display:grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 500px 500px 500px 500px 500px 500px;
+        
+    }
+    .graphicCont {
+        padding: 0px 40px 40px 40px;
+    }
+    #orangePic {
+        height: 300px;
+    }
+    #imghold1 {
+        height: 300px;
+        width: 100px;
+    }
+    #pictures {
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 400px 400px;
+    }
+
+    #testimonials {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 200px 200px 200px;
+        gap: 180px;
+    }
+    .info {
+        margin: 0 auto;
+    }
+}
+
+
+@media only screen and (max-width: 390px) {
+   body {
+       /* overflow-x: hidden; */
+   }
+   #navBar {
+       width: 100%;
+   }
+    #grid {
+        display:grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 500px 500px 500px 500px 500px 500px;
+        
+    }
+    .graphicCont {
+        padding: 0px 40px 40px 40px;
+    }
+    #orangePic {
+        height: 300px;
+    }
+    #imghold1 {
+        height: 300px;
+        width: 100px;
+    }
+    #pictures {
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 400px 400px;
+    }
+
+    #testimonials {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 200px 200px 200px;
+        gap: 180px;
+    }
+    .info {
+        margin: 0 auto;
+    }
+
+    
+    #realNav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 20;
+        top: 90px;
+        left: -1000px;
+        transition: all 0.5s;
+        border: 0.5px solid rgba(45, 43, 43, 0.514) ;
+        width: 100vw;
+        height: 300px;
+        text-align: center;
+        padding-left: 48px;
+    }
+    #realNav.sliding {
+        left: 0px;
+        background-color: white;
+    }
+    #realNav li {
+        margin-bottom: 30px;
+        position: relative;
+        top: 50px;
+    }
+    
+    #navBar ul li a {
+        opacity: 0.7;
+        color: black;
+        font-weight: 800;
+    }
+    .active {
+        background-color: hsl(51, 100%, 49%);
+    }
+
+    #title {
+        position: relative;
+        z-index: 2;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .bar {
+        display: block;
+        background-color: white;
+        width: 25px;
+        height: 3.5px;
+        margin: 5.3px;
+        transition: all 0.3s ease-in;
+
+    }
+    .hamburger.lol .bar:nth-child(1) {
+        transform: translateY(8.5px) rotate(45deg);
+    }
+    .hamburger.lol .bar:nth-child(2) {
+        opacity: 0;
+    } 
+    .hamburger.lol .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .bar-active {
+        display: block;
+        background-color: blue;
+    }
+
+   
+    .control:not(.active):hover {
+        background-color: rgba(28, 27, 27, 0.272);
+    
+    }
+
+    #secondNav {
+        width: 100%;
+    }
+    #logos {
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 280px) {
+   body {
+       /* overflow-x: hidden; */
+   }
+   #navBar {
+       width: 100%;
+   }
+    #grid {
+        display:grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 500px 500px 500px 500px 500px 500px;
+        
+    }
+    .graphicCont {
+        padding: 0px 40px 40px 40px;
+    }
+    #orangePic {
+        height: 300px;
+    }
+    #imghold1 {
+        height: 300px;
+        width: 100px;
+    }
+    #pictures {
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 400px 400px;
+    }
+
+    #testimonials {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 200px 200px 200px;
+        gap: 180px;
+    }
+    .info {
+        margin: 0 auto;
+    }
+    #realNav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 20;
+        top: 90px;
+        left: -1000px;
+        transition: all 0.5s;
+        border: 0.5px solid rgba(45, 43, 43, 0.514) ;
+        width: 100vw;
+        height: 300px;
+        text-align: center;
+        padding-left: 48px;
+    }
+    #realNav li {
+        margin-bottom: 30px;
+        position: relative;
+        top: 50px;
+    }
+    
+    #navBar ul li a {
+        opacity: 0.7;
+        color: black;
+        font-weight: 800;
+    }
+    .active {
+        background-color: hsl(51, 100%, 49%);
+    }
+
+    #title {
+        position: relative;
+        z-index: 2;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .bar {
+        display: block;
+        background-color: white;
+        width: 25px;
+        height: 3.5px;
+        margin: 5.3px;
+        transition: all 0.3s ease-in;
+
+    }
+    .hamburger.lol .bar:nth-child(1) {
+        transform: translateY(8.5px) rotate(45deg);
+    }
+    .hamburger.lol .bar:nth-child(2) {
+        opacity: 0;
+    } 
+    .hamburger.lol .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .bar-active {
+        display: block;
+        background-color: blue;
+    }
+    #realNav.sliding {
+        left: 0px;
+        background-color: white;
+    }
+   
+    .control:not(.active):hover {
+        background-color: rgba(28, 27, 27, 0.272);
+    
+    }
+
+    #secondNav {
+        width: 100%;
+    }
+    #logos {
+        width: 100vw;
+    }
+
+}
