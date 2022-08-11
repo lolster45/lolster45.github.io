@@ -1,0 +1,78 @@
+.main-section code{
+    background-color: rgb(234, 225, 225);
+    margin-left: 30px;
+    color: black;
+    padding: 6px 6px 6px 6px;
+    font-size: 10px;
+    word-break: normal;
+    word-wrap: normal;
+}
+.main-section header {
+    font-size: 30px;
+}
+#data_types ul li {
+    margin-bottom: 20px;
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    margin-left: -2px;
+    
+}
+#navbar header {
+    background-color: rgb(36,52,71);
+    color: white;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 25px;
+    padding-left: 25px;
+    border: 1px solid black;
+    padding: 20px 20px 20px 20px;
+    margin-top: -1px;
+    margin-bottom: 0;
+    border-right: 4px solid rgb(128, 126, 126);
+    border-bottom: 1px solid rgb(128, 126, 126);
+}
+#navbar li {
+    background-color: rgb(36,52,71);
+    color: white;
+    list-style: none;
+    font-family: 'Open Sans', Arial, sans-serif;
+    border: 1px solid rgb(36,52,71);
+    max-width: 380px;
+    width: 255px;
+    padding: 12px 22px 12px 22px;
+    font-size: 18px;
+}
+#navbar li a {
+    text-decoration: none;
+    color: white;
+}
+#navbar li.lol {
+    border-color: rgb(36,52,71);
+    border-right: 4px solid rgb(128, 126, 126);
+}
+#navbar li {
+    border: 1px solid rgb(215, 209, 209);
+    border-right: 4px solid rgb(128, 126, 126);
+    
+}
+
+#main-doc {
+    margin-top: -8px;
+    margin-bottom: -8px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: white;
+    background-color: rgb(36,52,71);
+    margin-left: 290px;
+    max-width: 1500px;
+    padding: 20px 10px 5px 30px;
+    height: fit-content;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: red;
+    }
+} 
