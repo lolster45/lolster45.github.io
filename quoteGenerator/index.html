@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            height: 100vh;
+            text-align: center;
+            position: relative;
+        }
+        #container {
+            transform: translateY(300px);
+            height: 20px;
+        }
+        #btnContainer {
+            transform: translateY(-400px);
+            height: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section>
+        <div id="container">
+            <span id="hours">0</span>
+            <span>:</span>
+            <span id="minutes">0</span>
+            <span>:</span>
+            <span id="seconds">0</span>
+        </div>
+    </section>
+    <section id="btnContainer">
+        <button type="button" id="start">Start</button>
+        <button type="button" id="end">End</button>
+
+    </section>
+   
+    
+</body>
+<script>
+    let counterS = 0;
+    let counterM = 00;
+    let counterH = 0;
+
+    const hours = document.querySelector("#hours")
+    const minutes = document.querySelector("#minutes")
+    const seconds = document.querySelector("#seconds")
+
+    const startbtn = document.querySelector("#start");
+    const endbtn = document.querySelector("#end");
+
+    // ----------------------------
+
+    startbtn.addEventListener("click", start);
+
+    function start () {
+        setInterval(happy, 1000);
+    }
+
+    function happy () {
+        counterS ++;
+        seconds.innerHTML = counterS;
+
+        if (counterS > 9) {
+            counterS = 0;
+            counterM++;
+            minutes.innerHTML = counterM;
+        }
+        if (counterM >= 02) {
+            counterM = 00;
+            counterH++;
+            hours.innerHTML = counterH;
+        }
+
+        // if (counterM >= 2) {
+        //     counterS = 0;
+        //     counterM = 0;
+        //     hours.innerHTML = counterH++;
+        // }
+    }
+
+
+
+</script>
+</html>
