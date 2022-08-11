@@ -577,7 +577,7 @@ footer ul {
             position: absolute;
             z-index: 9;
             top: 50px;
-            height: 30%;
+            height: auto;
             border-top: 3px solid #40798C;
             border-bottom: 3px solid #40798C;
             border-left: none;
