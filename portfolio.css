@@ -50,6 +50,7 @@
     height: 800px;
     position: relative;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 /* This is the skills section */
@@ -318,12 +319,18 @@
 .gitHubBtn {
     position: relative;
     cursor: pointer;
-    background-color: black;
+    background-color: #191610;
+    border: none;
     color: white;
     width: 80px;
-    height: 30px;
+    height: 35px;
     top: 20px;
-    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.gitHubBtn a {
+    text-decoration: none;
+    color: white;
+
 }
 .gitHubBtn:hover {
     background-color: rgb(37, 37, 37);
@@ -389,7 +396,7 @@
     background-image: url(/pictures/animeQuote\(pic\).jpg);
 }
 .img.five {
-    background-image: url(/pictures/wereComingSoon\ page\ pic.jpg);
+    background-image: url(/pictures/hero\(new\).jpg);
 }
 .img.six {
     background-image: url(/pictures/javaSNoob\ pic.jpg);
@@ -607,15 +614,15 @@ footer ul {
             height: 4px;
             border-radius: 10px;
             margin-bottom: 5px;
-            width: 40px;
+            width: 35px;
             top: 10px;
             right: 10px;
             background: white;
         }
-    
+
         .bar {
-         transition: all 0.2s ease-in;
-         border: none;
+            transition: all 0.2s ease-in;
+            border: none;
         }
         .hamburger.active .bar:nth-child(2) {
             opacity: 0;
@@ -627,6 +634,7 @@ footer ul {
         .hamburger.active .bar:nth-child(3) {
             transform: translateY(-7px) rotate(45deg);
         }
+
 
 
 
@@ -772,22 +780,31 @@ footer ul {
             }
 
            .hiddenBtn {
+                display: block;
                 z-index: 6;
                 position: absolute;
-                top: 0;
-                right: 0;
+                top: 5px;
+                right: 5px;
                 margin: 0 auto;
                 color: #9EE493;
                 border: none;
                 background-color: #1f4f5f;
-                border-bottom-left-radius: 50%;
+                border-radius: 50%;
                 cursor: pointer;
-                height: 30px;
-                width: 30px;
+                height: 25px;
+                width: 25px;
            }
 
-
-
+        .img.one {
+            min-height: 30%;
+            max-width: 100px;
+            background-size: cover;
+            background-position: center;
+        }
+        .text {
+            margin-top: -20px;
+            font-size: 14px;
+        }
 
 
         /* -------------------------------------- */
@@ -818,10 +835,20 @@ footer ul {
   }
 
   @media only screen and (max-width: 298px) {
+    .img.one {
+        min-height: 30%;
+        max-width: 100px;
+        background-size: cover;
+        background-position: center;
+    }
     #aboutMe p {
         font-size: 15px;
         line-height: 30px;
         transform: translateY(-80px);
         height: auto;
+    }
+    .text {
+        margin-top: -20px;
+        font-size: 12px;
     }
   }
