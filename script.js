@@ -130,6 +130,20 @@ messageInput.onblur = function () {
     messageInput.setAttribute("placeholder", messagePlace);
 }
 
+let gitBtn = document.querySelectorAll(".gitHubBtn");
+
+gitBtn.forEach(btn => {
+    btn.addEventListener("click", () => {
+        console.log(btn.parentElement);
+    })
+})
+
+
+let hamburger = document.querySelector(".hamburger");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+})
 
 
 
