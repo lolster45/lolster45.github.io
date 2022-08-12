@@ -612,7 +612,21 @@ footer ul {
             right: 10px;
             background: white;
         }
-
+    
+        .bar {
+         transition: all 0.2s ease-in;
+         border: none;
+        }
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(10.6px) rotate(-45deg);
+    
+        }
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-7px) rotate(45deg);
+        }
 
 
 
